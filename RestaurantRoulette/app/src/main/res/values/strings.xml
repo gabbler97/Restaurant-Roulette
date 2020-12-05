@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Restaurant Roulette</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">I don\'t have an account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_out">Log out</string>
+    <string name="budget">Choose your budget!</string>
+    <string name="choose_budget">Choose your budget!</string>
+    <string name="rb_one_cheap">Cheap</string>
+    <string name="rb_two_medium">Medium</string>
+    <string name="rb_three_expensive">Expensive</string>
+    <string name="how_far_you_can_go">How far can you go?</string>
+    <string name="km">km</string>
+    <string name="search">Search</string>
+    <string name="title_activity_add_restaurant">Map</string>
+    <string name="i_want_to_add_restaurant">I want to add a new Restaurant</string>
+    <string name="how_expensive">How expensive the Restaurant is?</string>
+    <string name="opening_hours">Opening hours</string>
+    <string name="add_restaurant">Add Restaurant</string>
+    <string name="_21_00">21:00</string>
+    <string name="_11_00">11:00</string>
+    <string name="restaurant_name">Restaurant name</string>
+</resources>

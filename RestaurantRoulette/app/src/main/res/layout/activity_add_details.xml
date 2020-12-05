@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDetailsActivity">
+
+
+    <RadioGroup
+        android:id="@+id/rg_budget_add"
+        android:layout_width="253dp"
+        android:layout_height="146dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538">
+
+        <RadioButton
+            android:id="@+id/rb_one_add"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_one_cheap" />
+
+        <RadioButton
+            android:id="@+id/rb_two_add"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_two_medium" />
+
+        <RadioButton
+            android:id="@+id/rb_three_add"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_three_expensive" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_expensive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_expensive"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/rg_budget_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <EditText
+        android:id="@+id/etOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/_11_00"
+        android:textSize="18sp"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_budget_add"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <EditText
+        android:id="@+id/etClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/_21_00"
+        android:inputType="time"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register_restaurant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etOpen"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <TextView
+        android:id="@+id/tv_opening_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opening_hours"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/etOpen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_budget_add"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <Button
+        android:id="@+id/btn_register_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_restaurant"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etOpen"
+        app:layout_constraintVertical_bias="0.806" />
+
+    <EditText
+        android:id="@+id/etRestaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:hint="@string/restaurant_name"
+        app:layout_constraintBottom_toTopOf="@+id/tv_expensive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
